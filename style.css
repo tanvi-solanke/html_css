@@ -1,0 +1,456 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172b;
+  padding: 20px 50px;
+  color: white;
+}
+
+
+/* #logo img {
+  width: 120px;
+  height: auto;
+} */
+.logo {
+  color: orange;  /* orange color */
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo i {
+  color:orange;
+  margin-right: 8px;
+}
+
+#menubar h2 {
+  color: orange;
+  font-size: 22px;
+}
+
+#navbar nav {
+  display: flex;
+  /* gap: 20px; */
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+/* it smoothly fades from white → orange */
+#navbar li a {
+  color: white;
+  font-weight: 500;
+  /* transition: color 0.3s; */
+}
+
+/* when cursor is move it popup */
+#navbar li a:hover {
+  color: orange;
+}
+
+/* ===== HERO SECTION ===== */
+#herosection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(49, 49, 81);
+  color: white;
+  padding: 80px 100px;
+ 
+   
+
+}
+ 
+
+#herosection h1 {
+  font-size: 3rem;
+  color: #fea116;
+  margin-bottom: 20px;
+}
+
+#herosection p {
+  max-width: 550px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#herosection button {
+  background: #fea116;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#herosection button:hover {
+  background: #d98f00;
+}
+
+#herosection_child img {
+  width: 350px;
+}
+
+/* ===== FEATURES (herosection2) ===== */
+#herosection2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 60px 100px;
+  gap: 20px;
+  background: #f8f9fa;
+}
+
+.dining i {
+  color: #fea116;
+  margin-bottom: 15px;
+}
+
+.dining h2 {
+  margin-bottom: 10px;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 80px 100px;
+  gap: 20px;
+  align-items: center;
+}
+
+#about #items img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#about #items i {
+  color: #fea116;
+  font-style: normal;
+}
+
+#about #items h2 {
+  color: #0f172b;
+  margin: 10px 0;
+}
+
+#about #items p {
+  margin-bottom: 15px;
+}
+
+#about button {
+  background-color: #fea116;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===== FOOD MENU ===== */
+#foodmenu {
+  padding: 80px 100px;
+  background: #fff;
+  text-align: center;
+}
+
+.menu-heading i {
+  color: #fea116;
+  font-style: normal;
+}
+
+.menu-heading h2 {
+  margin: 10px 0 30px;
+}
+
+.menu-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.menu-categories li {
+  border: 1px solid #fea116;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  color:black;
+  font-weight: 500;
+}
+
+.menu-categories li.active,
+.menu-categories li:hover {
+  background: #fea116;
+  color: white;
+}
+
+/* ===== MENU ITEMS ===== */
+
+/* Menu section layout */
+#menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  padding: 50px 80px;
+  background-color: #fff;
+}
+
+/* Individual menu item styling */
+.Items {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px gray(0, 0, 0, 0.05);
+  text-align: center;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.Items:hover {
+  /* transform: translateY(-8px); */
+  box-shadow: 0 8px 18px red(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.Items img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+ /* for popup img */
+/* .Items:hover img {
+  transform: scale(1.05);
+} */
+
+/* Text styling */
+.Items b {
+  display: block;
+  font-size: 1.1rem;
+  color:black;
+  margin-bottom: 6px;
+}
+
+.Items h3 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: white;
+}
+
+
+
+
+/* ===== BOOK TABLE ===== */
+#booktable {
+  background-color: #0f172b;
+  color: #fff;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.reservation-box input,
+.reservation-box select,
+.reservation-box textarea {
+  width: 45%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.reservation-box button {
+  background: #fea116;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* ===== CHEFS SECTION ===== */
+#Chefs {
+  padding: 80px 100px;
+  text-align: center;
+}
+
+#Chefs i {
+  color: #fea116;
+  font-style: normal;
+}
+
+#Chefs h2 {
+  margin-bottom: 40px;
+}
+
+.teams {
+  display: inline-block;
+  margin: 20px;
+}
+
+.teams img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*  FOOTER  */
+footer {
+  background-color: #0f172b;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer i {
+  color: #fea116;
+  margin: 10px;
+}
+
+footer h2 {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+
+
+/* ===== RESPONSIVE (PHONE VIEW) ===== */
+@media (max-width: 768px) {
+  
+  /* General layout fix */
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #navbar nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #navbar li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /* Hero section */
+  #herosection {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #herosection h1 {
+    font-size: 2rem;
+  }
+
+  #herosection p {
+    max-width: 100%;
+  }
+
+  #herosection_child img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  /* Hero section 2 (features) */
+  #herosection2 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  /* About section */
+  #about {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #about #items img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Food menu */
+  #foodmenu {
+    padding: 40px 20px;
+  }
+
+  
+   #menu-list {
+  display: grid;
+  /* grid-template-columns: 1fr;  Only one column per row */
+  padding: 60px;
+  gap: 20px;
+}
+
+
+  .Items b {
+    font-size: 1rem;
+  }
+
+  .Items h3 {
+    font-size: 0.85rem;
+  }
+
+  /* Book table section */
+  #booktable {
+    padding: 40px 20px;
+  }
+
+  .reservation-box input,
+  .reservation-box select,
+  .reservation-box textarea {
+    width: 90%;
+  }
+
+  /* Chefs section */
+  #Chefs {
+    padding: 40px 20px;
+  }
+
+  .teams img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 15px;
+    font-size: 13px;
+  }
+}
