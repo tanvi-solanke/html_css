@@ -45,8 +45,11 @@ header {
 
 #navbar nav {
   display: flex;
-  /* gap: 20px; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
 }
+
 
 #navbar li {
   display: inline-block;
